@@ -2,73 +2,20 @@
 <html>
     <head>
         <title><i>Streetzen</i></title>
-        <style>
-            nav{
-                background-color:black;
-            }
-            .hero{
-                background-image:url('hero1.jpg');
-                padding:20px;height:270px;
-            }
-            .hero h1{
-                text-align:center;
-                color:white;justify-content:center;font-family:"comic sans ms",cursive,sans-serif;
-                                font-size:70px;font-weight:lighter;
-                
-            }
-            body{
-                background-color:lightgreen;
-                font-family:arial;
-                padding:10px;
-                margin:0;
-            }
-            nav a{
-                color:white;
-                font-weight:bold;
-                }
-                section{
-                    padding:40px;
-                }
-                h2{
-                    background-color:brown;
-                    color:white;padding:10px;
-                }
-            .product{
-                border:1px;
-                border-radius:10px;
-            }
-            .left{
-                float:left;
-                margin-right:20px;
-            }
-            .right{
-                display:inline-block;
-                position: static;
-                right:20px;
-                margin-right:20px;
-            }
-        .img-style{
-        display:inline-block;
-   
-            }
-        .style1{
-            width:40px;
-            height:40px;
-        }
-        </style>
-
+        <link rel="stylesheet" href="web.css">
     </head>
-<body>
+<body class="cls">
     <div class="hero">
      <h1><b><i>welcome to streetzen</i></b></h1>
      </div>
      <hr>
      <nav style="background-color:black;text-align:center;padding:10px;word-spacing:40px;font-size:20px;">
-        <a href="#home">Home</a>
-        <a href="#About">About</a>
-        <a href="#tops">Tops</a>
-        <a href="#bottoms">Bottoms</a>
-        <a href="#products">Allproducts</a>
+        <a href="#home" onclick="audio()">Home</a>
+        <a href="#About" onclick="audio()">About</a>
+        <a href="#tops" onclick="audio()">Tops</a>
+        <a href="#bottoms" onclick="audio()">Bottoms</a>
+        <a href="#products" onclick="audio()">Allproducts</a>
+        <a href="available.html" onclick="audio()">avalable</a>
 
      </nav>
      <section id=home>
@@ -139,8 +86,19 @@
             </div>
         </div>
     </section>
+    <audio id="clicksound">
+        <source src="click.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function audio(){
+            let sound=document.getElementById("clicksound");
+            sound.currentTime=0;
+            sound.play();
+        }
+    </script>
     <footer align="center">
         <h1> Thank you for visiting</h1>
     </footer>
+    
     </body>
 </html>
