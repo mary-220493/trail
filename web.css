@@ -21,6 +21,9 @@
                 color:white;
                 font-weight:bold;
                 }
+            .navi a:hover{
+                background-color:brown;
+            }
                 section{
                     padding:40px;
                 }
@@ -31,6 +34,13 @@
             .product{
                 border:1px;
                 border-radius:10px;
+            }
+            .products{
+                display:flex;
+                gap:5px;
+            }
+            .products h3,p{
+                text-align:center;
             }
             .left{
                 float:left;
@@ -55,14 +65,14 @@
             margin:40px auto;
             border-collapse:collapse;
             font-family:arial,sans-serif;
-            background-color:white;
-            color:black;
+            background-color:black;
+            color:yellow;
         }
         .tbl3 th,td{
             padding:15px;
-            border:1px solid black;
+            border:1px solid rgb(0, 0, 0);
             text-align:center;
-            border:1px solid black;
+            border:1px solid yellow;
         }
         .bg-video{
             position:fixed;
