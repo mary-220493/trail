@@ -1,0 +1,3 @@
+Hello! This is PHP File Functions Demo.in that we are going to see 
+all functions related to files.
+Welcome!
