@@ -31,16 +31,51 @@
                     background-color:brown;
                     color:white;padding:10px;
                 }
-            .product{
-                border:1px;
-                border-radius:10px;
+            #tops .tops {
+                display: flex !important;
+                flex-direction: row !important;
+                flex-wrap: nowrap !important;
+                gap: 20px;
+                overflow-x: auto;
+                padding: 20px;
+                background-color: rgba(0, 0, 0, 0.2);
+                border-radius: 15px;
             }
-            .products{
-                display:flex;
-                gap:5px;
+            .product {
+                flex: 0 0 auto;
+                width: 267px; /* Matches image width */
+                text-align: center;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                padding: 15px;
+                background-color: rgba(255, 255, 255, 0.1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
-            .products h3,p{
-                text-align:center;
+            .product img {
+                width: 267px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .product h3 {
+                margin: 10px 0 5px 0;
+                font-size: 1.1em;
+                color: white;
+            }
+            .product p {
+                margin: 0;
+                color: #ffeb3b;
+                font-weight: bold;
+            }
+            .products {
+                display: flex;
+                gap: 5px;
+            }
+            .tops h3, .tops p, .products h3, .products p {
+                text-align: center;
             }
             .left{
                 float:left;
