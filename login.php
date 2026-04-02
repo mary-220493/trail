@@ -1,31 +1,25 @@
-
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$dbUsername = "chelli";
-$dbPassword = "123456";
-if (isset($_POST['login'])) {
-    $inputUser = trim($_POST['username']);
-    $inputPass = trim($_POST['password']);
+// Simple Login Script
+include 'db.php';
 
-    $inputUser = htmlspecialchars($inputUser);
-    $inputPass = addslashes($inputPass);
-    if (strcasecmp($dbUsername, $inputUser) == 0) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['pwd'];
 
-        // Password: case sensitive
-        if (strcmp($dbPassword, $inputPass) == 0) {
+    // Check if user exists with current credentials
+    $sql = "SELECT id, name FROM users WHERE email = '$email' AND password = '$password'";
+    $result = mysqli_query($conn, $sql);
 
-            echo "<h3>Login Successful</h3>";
-
-        } else {
-            print "Invalid Password";
-        }
-
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        echo "<h3>Login successful! Welcome " . $row['name'] . ".</h3>";
+        echo "<p><a href='index.html'>Go to Homepage</a></p>";
     } else {
-        die("Invalid Username");
+        echo "<h3>Invalid credentials.</h3>";
+        echo "<p>Please <a href='login.html'>Try again here</a>.</p>";
     }
-
-} else {
-    die("Invalid Request");
 }
+
+// Close connection
+mysqli_close($conn);
 ?>
