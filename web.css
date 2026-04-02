@@ -130,4 +130,82 @@
             position:relative;
             z-index:1;
         }
+
+        /* Simplified Horizontal Footer Styles */
+        .site-footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 40px 20px;
+            font-family: 'Arial', sans-serif;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 3px solid brown;
+        }
+
+        .footer-brand h2 {
+            color: #ffeb3b;
+            font-size: 1.8em;
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .footer-links-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-bottom: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links-row a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links-row a:hover {
+            color: #ffeb3b;
+        }
+
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .social-row a {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-row a:hover {
+            background-color: brown;
+            transform: scale(1.1);
+        }
+
+        .footer-info {
+            color: #888;
+            font-size: 0.85em;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-info b {
+            color: #ffeb3b;
+        }
         
