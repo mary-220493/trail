@@ -31,7 +31,7 @@
                     background-color:brown;
                     color:white;padding:10px;
                 }
-            #tops .tops {
+            #tops .tops, #bottoms .bottoms {
                 display: flex !important;
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
