@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3. Event Handling</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Handling Methods</h1>
+        <a href="index.html" class="back-link">Back to Index</a>
+
+
+        <div class="section">
+            <h2>Mouse Events</h2>
+            <button id="evt-click" class="btn">click()</button>
+            <button id="evt-dblclick" class="btn">dblclick()</button>
+            <div id="evt-hover" class="box">Hover / Mouse Enter & Leave</div>
+            <div id="evt-mouse-ud" class="box">Mouse Down & Up</div>
+        </div>
+
+
+        <div class="section">
+            <h2>Keyboard Events</h2>
+            <input type="text" id="evt-key" placeholder="Type here...">
+            <p id="key-output" class="output-text"></p>
+        </div>
+
+
+        <div class="section">
+            <h2>Form Events</h2>
+            <form id="evt-form">
+                <input type="text" id="evt-focus-blur" placeholder="Focus/Blur testing">
+                <select id="evt-change">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                </select>
+                <button type="submit" class="btn">Submit Form</button>
+            </form>
+            <p id="form-output" class="output-text"></p>
+        </div>
+
+
+        <div class="section">
+            <h2>General Event Method (on / off)</h2>
+            <button id="evt-on" class="btn">Click me! (on)</button>
+            <button id="evt-off" class="btn">Remove Click Event (off)</button>
+            <p id="on-off-output" class="output-text"></p>
+        </div>
+    </div>
+</body>
+</html>

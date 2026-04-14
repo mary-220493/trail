@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6. Effects & Animation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>jQuery Effects and Animations</h1>
+        <a href="index.html" class="back-link">Back to Index</a>
+
+
+        <div class="section">
+            <h2>Basic & Fade Effects</h2>
+            <div id="effect-box" class="box">Effect Box</div>
+            <button id="btn-hide" class="btn">hide()</button>
+            <button id="btn-show" class="btn">show()</button>
+            <button id="btn-toggle" class="btn">toggle()</button>
+            <br>
+            <button id="btn-fadeout" class="btn">fadeOut()</button>
+            <button id="btn-fadein" class="btn">fadeIn()</button>
+            <button id="btn-fadetoggle" class="btn">fadeToggle()</button>
+            <button id="btn-fadeto" class="btn">fadeTo(0.5)</button>
+        </div>
+
+
+        <div class="section">
+            <h2>Sliding Effects</h2>
+            <div id="slide-header" class="slide-header">Click to SlideToggle</div>
+            <div id="slide-content" class="slide-content">This content slides up and down.</div>
+            <br>
+            <button id="btn-slideup" class="btn">slideUp()</button>
+            <button id="btn-slidedown" class="btn">slideDown()</button>
+        </div>
+
+
+        <div class="section">
+            <h2>Custom Animation & Control</h2>
+            <div id="anim-box" class="box" style="position:relative; left:0;">Anim Box</div>
+            <button id="btn-anim" class="btn">Start animate() Chain</button>
+            <button id="btn-stop" class="btn">stop()</button>
+            <button id="btn-finish" class="btn">finish()</button>
+            <button id="btn-clearqueue" class="btn">clearQueue()</button>
+            <button id="btn-dequeue" class="btn">dequeue()</button>
+        </div>
+    </div>
+</body>
+</html>

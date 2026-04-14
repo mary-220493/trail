@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2. Attribute Methods</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Attribute Methods</h1>
+        <a href="index.html" class="back-link">Back to Index</a>
+
+
+        <div class="section">
+            <h2>attr() & removeAttr()</h2>
+            <img id="demo-img" src="https://via.placeholder.com/150/0000FF/808080" alt="Placeholder Blue">
+            <br>
+            <button id="change-img" class="btn">Change Image Source</button>
+            <button id="remove-alt" class="btn">Remove Alt Attribute</button>
+        </div>
+
+
+        <div class="section">
+            <h2>prop()</h2>
+            <label><input type="checkbox" id="demo-checkbox"> Check me!</label>
+            <br>
+            <button id="toggle-cb" class="btn">Enable/Disable Checkbox</button>
+            <button id="check-cb" class="btn">Check/Uncheck</button>
+        </div>
+
+
+        <div class="section">
+            <h2>val()</h2>
+            <input type="text" id="demo-input" value="Default Value">
+            <button id="get-val" class="btn">Retrieve Input Value</button>
+            <button id="set-val" class="btn">Set New Value</button>
+            <p id="val-output" class="output-text"></p>
+        </div>
+    </div>
+</body>
+</html>
